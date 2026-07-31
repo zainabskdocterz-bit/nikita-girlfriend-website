@@ -1,1 +1,974 @@
+/* ==========================
+   GOOGLE STYLE RESET
+========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F8EFE8;
+
+    color:#5B4B4B;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================
+        NAVBAR
+========================== */
+
+header{
+
+    width:100%;
+
+    padding:18px;
+
+    position:sticky;
+
+    top:0;
+
+    background:rgba(248,239,232,.90);
+
+    backdrop-filter:blur(10px);
+
+    z-index:999;
+
+}
+
+nav{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:22px;
+
+    flex-wrap:wrap;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#7E5A5A;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#E89AAE;
+
+}
+
+/* ==========================
+        HERO
+========================== */
+
+.hero{
+
+    padding:60px 20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-family:'Sacramento',cursive;
+
+    font-size:60px;
+
+    color:#D57B93;
+
+}
+
+.hero p{
+
+    margin-top:15px;
+
+    line-height:1.8;
+
+    color:#6B6060;
+
+    font-size:15px;
+
+}
+
+.hero button{
+
+    margin-top:30px;
+
+    background:#F4C7D4;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:40px;
+
+    padding:14px 30px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.hero button:hover{
+
+    transform:scale(1.05);
+
+    background:#E9A8BC;
+
+}
+
+/* ==========================
+     HERO PHOTO
+========================== */
+
+.hero-photo{
+
+    width:250px;
+
+    height:300px;
+
+    margin-top:35px;
+
+    background:#FFF;
+
+    border:10px solid white;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#999;
+
+    transform:rotate(-4deg);
+
+}
+
+/* ==========================
+    EXPLORE SECTION
+========================== */
+
+.explore{
+
+    padding:60px 20px;
+
+    text-align:center;
+
+}
+
+.explore h2{
+
+    font-family:'Sacramento',cursive;
+
+    font-size:52px;
+
+    color:#D57B93;
+
+}
+
+.explore-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.card{
+
+    background:#FFF8F5;
+
+    padding:22px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.icon{
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.card h3{
+
+    color:#C56C86;
+
+    margin-bottom:8px;
+
+}
+
+.card p{
+
+    font-size:13px;
+
+    color:#777;
+
+}
+
+/* ==========================
+ MOBILE
+========================== */
+
+@media(max-width:480px){
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero-photo{
+
+width:220px;
+
+height:270px;
+
+}
+
+.explore-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/* =====================================
+        OUR STORY
+===================================== */
+
+.story{
+
+padding:70px 20px;
+
+text-align:center;
+
+}
+
+.story h2{
+
+font-family:'Sacramento',cursive;
+
+font-size:52px;
+
+color:#D57B93;
+
+}
+
+.story-subtitle{
+
+margin-top:10px;
+
+color:#7b6d6d;
+
+margin-bottom:40px;
+
+}
+
+.story-gallery{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-bottom:45px;
+
+}
+
+.story-photo{
+
+width:220px;
+
+height:270px;
+
+background:#fff;
+
+border:10px solid white;
+
+border-radius:12px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+transform:rotate(-3deg);
+
+color:#aaa;
+
+font-weight:500;
+
+}
+
+.story-photo:nth-child(2){
+
+transform:rotate(3deg);
+
+}
+
+.story-photo:nth-child(3){
+
+transform:rotate(-2deg);
+
+}
+
+.timeline{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.timeline-box{
+
+background:#FFF8F5;
+
+padding:22px;
+
+border-radius:18px;
+
+box-shadow:0 8px 18px rgba(0,0,0,.06);
+
+text-align:left;
+
+}
+
+.timeline-box h3{
+
+color:#C96D87;
+
+margin-bottom:10px;
+
+}
+
+
+
+/* =====================================
+        MEMORIES
+===================================== */
+
+.memories{
+
+padding:70px 20px;
+
+text-align:center;
+
+}
+
+.memories h2{
+
+font-family:'Sacramento',cursive;
+
+font-size:52px;
+
+color:#D57B93;
+
+}
+
+.memory-subtitle{
+
+margin:10px 0 40px;
+
+color:#7b6d6d;
+
+}
+
+.memory-container{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:22px;
+
+}
+
+.memory-card{
+
+background:#FFF8F5;
+
+padding:20px;
+
+border-radius:20px;
+
+box-shadow:0 8px 18px rgba(0,0,0,.06);
+
+}
+
+.memory-card h3{
+
+color:#C96D87;
+
+margin-bottom:18px;
+
+}
+
+.memory-photo{
+
+width:100%;
+
+height:240px;
+
+background:#fff;
+
+border:10px solid white;
+
+border-radius:12px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:#999;
+
+margin-bottom:18px;
+
+}
+
+
+
+/* =====================================
+        LETTER
+===================================== */
+
+.letters{
+
+padding:70px 20px;
+
+text-align:center;
+
+}
+
+.letters h2{
+
+font-family:'Sacramento',cursive;
+
+font-size:52px;
+
+color:#D57B93;
+
+}
+
+.letter-subtitle{
+
+margin:12px 0 30px;
+
+color:#7b6d6d;
+
+}
+
+.envelope{
+
+width:240px;
+
+height:150px;
+
+margin:30px auto;
+
+background:#EFD8C9;
+
+border-radius:12px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+cursor:pointer;
+
+}
+
+.envelope-front{
+
+text-align:center;
+
+}
+
+.envelope-front h3{
+
+margin-top:10px;
+
+color:#B86C83;
+
+}
+
+.letter-paper{
+
+margin-top:40px;
+
+background:#FFFDF8;
+
+padding:35px;
+
+border-radius:20px;
+
+max-width:750px;
+
+margin-left:auto;
+
+margin-right:auto;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+text-align:left;
+
+line-height:2;
+
+}
+
+.letter-paper h2{
+
+font-size:34px;
+
+margin-bottom:20px;
+
+}
+
+
+
+/* =====================================
+        FAVOURITE PLACES
+===================================== */
+
+.places{
+
+padding:70px 20px;
+
+text-align:center;
+
+}
+
+.places h2{
+
+font-family:'Sacramento',cursive;
+
+font-size:52px;
+
+color:#D57B93;
+
+}
+
+.places-subtitle{
+
+margin:10px 0 35px;
+
+}
+
+.places-gallery{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:22px;
+
+}
+
+.place-card{
+
+background:#FFF8F5;
+
+padding:18px;
+
+border-radius:20px;
+
+box-shadow:0 8px 18px rgba(0,0,0,.06);
+
+}
+
+.place-photo{
+
+height:220px;
+
+background:#fff;
+
+border:8px solid white;
+
+border-radius:12px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+color:#999;
+
+margin-bottom:15px;
+
+}
+
+
+
+/* =====================================
+        PLAYLIST
+===================================== */
+
+.playlist{
+
+padding:70px 20px;
+
+text-align:center;
+
+}
+
+.playlist h2{
+
+font-family:'Sacramento',cursive;
+
+font-size:52px;
+
+color:#D57B93;
+
+}
+
+.song-card{
+
+background:#FFF8F5;
+
+padding:18px;
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+border-radius:20px;
+
+max-width:650px;
+
+margin:18px auto;
+
+box-shadow:0 8px 18px rgba(0,0,0,.06);
+
+}
+
+.song-icon{
+
+font-size:35px;
+
+}
+
+.song-info h3{
+
+color:#C96D87;
+
+}
+
+
+
+/* =====================================
+      MOBILE
+===================================== */
+
+@media(max-width:768px){
+
+.story-gallery{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.memory-container{
+
+grid-template-columns:1fr;
+
+}
+
+.places-gallery{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/* =====================================
+        PHOTO STRIP
+===================================== */
+
+.photo-strip{
+    padding:70px 20px;
+    text-align:center;
+}
+
+.photo-strip h2{
+    font-family:'Sacramento',cursive;
+    font-size:52px;
+    color:#D57B93;
+    margin-bottom:40px;
+}
+
+.strip{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.strip-photo{
+    width:150px;
+    height:190px;
+    background:#fff;
+    border:10px solid #fff;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#999;
+    font-weight:500;
+    box-shadow:0 10px 20px rgba(0,0,0,.10);
+}
+
+.strip-photo:nth-child(1){
+    transform:rotate(-8deg);
+}
+
+.strip-photo:nth-child(2){
+    transform:rotate(6deg);
+}
+
+.strip-photo:nth-child(3){
+    transform:rotate(-4deg);
+}
+
+.strip-photo:nth-child(4){
+    transform:rotate(5deg);
+}
+
+.strip-photo:nth-child(5){
+    transform:rotate(-7deg);
+}
+
+
+
+/* =====================================
+        OUR BOND
+===================================== */
+
+.bond{
+    padding:70px 20px;
+    text-align:center;
+}
+
+.bond h2{
+    font-family:'Sacramento',cursive;
+    font-size:52px;
+    color:#D57B93;
+}
+
+.bond-subtitle{
+    margin:12px 0 40px;
+    color:#7b6d6d;
+}
+
+.bond-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.bond-card{
+    background:#FFF8F5;
+    padding:25px;
+    border-radius:22px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.bond-card h3{
+    color:#C96D87;
+    margin-bottom:15px;
+}
+
+
+
+/* =====================================
+    WHY YOU'RE SPECIAL
+===================================== */
+
+.special{
+    padding:70px 20px;
+    text-align:center;
+}
+
+.special h2{
+    font-family:'Sacramento',cursive;
+    font-size:52px;
+    color:#D57B93;
+    margin-bottom:35px;
+}
+
+.special-box{
+    max-width:750px;
+    margin:auto;
+    background:#FFFDF8;
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.special-box ul{
+    list-style:none;
+    text-align:left;
+}
+
+.special-box li{
+    margin:16px 0;
+    font-size:16px;
+}
+
+
+
+/* =====================================
+            FOOTER
+===================================== */
+
+footer{
+    padding:80px 20px;
+    text-align:center;
+}
+
+footer h2{
+    font-family:'Sacramento',cursive;
+    font-size:42px;
+    color:#D57B93;
+}
+
+footer h1{
+    font-size:42px;
+    color:#C96D87;
+    margin:15px 0;
+}
+
+footer p{
+    color:#777;
+}
+
+
+
+/* =====================================
+        BUTTON HOVER
+===================================== */
+
+button,
+.card,
+.memory-card,
+.place-card,
+.song-card,
+.bond-card,
+.strip-photo{
+    transition:.35s;
+}
+
+.card:hover,
+.memory-card:hover,
+.place-card:hover,
+.song-card:hover,
+.bond-card:hover,
+.strip-photo:hover{
+    transform:translateY(-8px);
+}
+
+
+
+/* =====================================
+      MOBILE RESPONSIVE
+===================================== */
+
+@media(max-width:768px){
+
+.bond-container{
+    grid-template-columns:1fr;
+}
+
+.strip{
+    justify-content:center;
+}
+
+.strip-photo{
+    width:130px;
+    height:170px;
+}
+
+footer h1{
+    font-size:30px;
+}
+
+.special-box{
+    padding:25px;
+}
+
+}
